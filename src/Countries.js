@@ -11,8 +11,8 @@ const Countries = () => {
                 const response = await axios.get("https://xcountries-backend.labs.crio.do/all");
                 console.log(response.data);
                 setCountries(response.data);
-            } catch {
-                console.log("An error occured");
+            } catch(e){
+                console.log(e);
             }
         }
 
